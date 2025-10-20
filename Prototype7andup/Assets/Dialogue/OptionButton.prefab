@@ -199,7 +199,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 344.21, y: -11.715}
+  m_AnchoredPosition: {x: 344.21, y: -10.6}
   m_SizeDelta: {x: 668.42, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6669970575008434908
@@ -233,8 +233,8 @@ MonoBehaviour:
   m_text: This is an option this is what happens when its long.This is an option
     this is what happens when its long.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 440413046a8444e5b89c53d9c2f4540d, type: 2}
-  m_sharedMaterial: {fileID: -50566198763424380, guid: 440413046a8444e5b89c53d9c2f4540d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 32e671afca4ca42708223a20a165ca01, type: 2}
+  m_sharedMaterial: {fileID: 3649814537610636944, guid: 32e671afca4ca42708223a20a165ca01, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -258,8 +258,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
