@@ -119,6 +119,7 @@ public class NewInkTest : MonoBehaviour
     private IEnumerator ScrollToBottomNextFrame()
     {
         yield return null; // Wait one frame
+        yield return null;    
         yield return null; 
         Canvas.ForceUpdateCanvases(); // Force layout to update now
         scrollRect.verticalNormalizedPosition = 0f; // Scroll to bottom
