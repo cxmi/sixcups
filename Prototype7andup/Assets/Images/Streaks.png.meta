@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ece8021cdc9934a2494d6d976f409115
+guid: c4deffd4a3c864a4f94c77a2400ec818
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7247563533014855108
-    second: pool2 1_0
+      213: 7592705411512800642
+    second: Streaks_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pool2 1_0
+      name: Streaks_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1200
-        height: 1200
+        width: 185
+        height: 185
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4cdec6052a4849460800000000000000
-      internalID: 7247563533014855108
+      spriteID: 28518690855be5960800000000000000
+      internalID: 7592705411512800642
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pool2 1_0: 7247563533014855108
+      Streaks_0: 7592705411512800642
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

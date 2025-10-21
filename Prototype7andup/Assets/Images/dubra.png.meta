@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ece8021cdc9934a2494d6d976f409115
+guid: 0a37738d4a1894ff7a2a9ec759cfeee1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7247563533014855108
-    second: pool2 1_0
+      213: -2915857341319570730
+    second: dubra_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pool2 1_0
+      name: dubra_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1200
-        height: 1200
+        width: 684
+        height: 960
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4cdec6052a4849460800000000000000
-      internalID: 7247563533014855108
+      spriteID: 6da9eea623bc887d0800000000000000
+      internalID: -2915857341319570730
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pool2 1_0: 7247563533014855108
+      dubra_0: -2915857341319570730
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

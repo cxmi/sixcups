@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a582758b5a21a4b8a934bfa81becc4b7
+guid: ee70ef7edc79543a99cc1f6d7fa3fa89
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Zilla Slab Highlight
+  - Space Mono
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
