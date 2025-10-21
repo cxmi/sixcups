@@ -78,7 +78,7 @@ public class TextStyleInk : MonoBehaviour
         }
         else
         {
-            AddMessage("<i>To be continued.</i>"); //THIS IS THE ENDING THINGY
+            //AddMessage("<i>To be continued.</i>"); //THIS IS THE ENDING THINGY
         }
     }
 
