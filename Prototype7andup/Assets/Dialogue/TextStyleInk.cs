@@ -1,11 +1,12 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Ink.Runtime;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewInkTest : MonoBehaviour
+public class TextStyleInk : MonoBehaviour
 {
     [Header("Ink Story")]
     [SerializeField] private TextAsset inkJSONAsset;
@@ -14,9 +15,13 @@ public class NewInkTest : MonoBehaviour
     [Header("UI References")]
     [SerializeField] private ScrollRect scrollRect;                // Scroll View component
     [SerializeField] private Transform contentParent;              // ScrollView/Viewport/Content
-    [SerializeField] private TextMeshProUGUI messagePrefab;        // Prefab for story messages
-    [SerializeField] private Button choiceButtonPrefab;            // Prefab for choice buttons
+    [SerializeField] private TextMeshProUGUI herMessagePrefab;        // Prefab for story messages
+    [SerializeField] private TextMeshProUGUI hisMessagePrefab;
+    [SerializeField] private Button choiceButtonPrefab;   
+    
+    [SerializeField] private TextMeshProUGUI messagePrefab;// Prefab for choice buttons
 
+    [SerializeField] private String currentTag;
     private void Start()
     {
        // scrollRect.verticalNormalizedPosition = 0f;
@@ -36,10 +41,32 @@ public class NewInkTest : MonoBehaviour
         while (story.canContinue)
         {
             string line = story.Continue().Trim();
-            AddMessage(line);
             //yield return new WaitForSeconds(0.25f); // Add delay for chat feel
             
+            // Check for tags
+            List<string> currentTags = story.currentTags;
+            if (currentTags.Count > 0)
+            {
+                Debug.Log("Tags found:");
+                foreach (string tag in currentTags)
+                {
+                    Debug.Log("- " + tag);
+                    
+                    currentTag = tag;
+                    // You can parse and react to tags here
+                    // For example, if a tag is "#character:John", you can extract "John"
+                    // and update a character portrait.
+                }
+            }
+            
+            AddMessage(line);
+
+            
+            
             yield return WaitForSpaceKey();
+            
+            
+           
         }
 
         if (story.currentChoices.Count > 0)
@@ -57,8 +84,25 @@ public class NewInkTest : MonoBehaviour
 
     private void AddMessage(string text)
     {
-        var message = Instantiate(messagePrefab, contentParent);
-        message.text = text;
+        
+        //check tags here
+
+        if (currentTag == "wife")
+        {
+            var message = Instantiate(herMessagePrefab, contentParent);
+            message.text = text;
+        }
+        else if (currentTag == "him")
+        {
+            var message = Instantiate(hisMessagePrefab, contentParent);
+            message.text = text;
+        }
+        else
+        {
+            var message = Instantiate(messagePrefab, contentParent);
+            message.text = text;
+        }
+        
 
         
         
