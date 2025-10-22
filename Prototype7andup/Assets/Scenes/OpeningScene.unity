@@ -796,6 +796,7 @@ MonoBehaviour:
   damageImage: {fileID: 0}
   audioSource: {fileID: 0}
   clip: {fileID: 0}
+  flashInterval: 0.2
 --- !u!4 &387458514
 Transform:
   m_ObjectHideFlags: 0
@@ -3523,8 +3524,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4285230041
-  m_fontColor: {r: 0.8490566, g: 0.42052332, b: 0.42052332, a: 1}
+    rgba: 4289374958
+  m_fontColor: {r: 0.9339623, g: 0.66522783, b: 0.66522783, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

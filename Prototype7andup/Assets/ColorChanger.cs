@@ -37,7 +37,7 @@ public class ColorChanger : MonoBehaviour
         image.color = hoverColor;
         if (!audioPlaying)
         {
-            audioSource.PlayOneShot(audioClip);
+            audioSource.PlayOneShot(audioClip, 0.7f);
             audioPlaying = true;
         }
     }

@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/French75Scene.unity
     guid: 9f3f3a583000a42a08f42234f2c59191
   - enabled: 1
+    path: Assets/Scenes/DubraScene.unity
+    guid: df5d03619366d42ca9ae44a1e902c21a
+  - enabled: 1
     path: Assets/Scenes/CoffeeScene.unity
     guid: 381d74ea847794e2991a9cd2549c9bc8
   m_configObjects:
