@@ -6,11 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/OpeningScene.unity
+    guid: b8c8ca5fa520d4620a26c7f360b9f6ca
+  - enabled: 1
     path: Assets/Scenes/MaiTaiScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/PickleScene.unity
     guid: f654ef4473af147ca9d8ca9d19e37c6b
+  - enabled: 1
+    path: Assets/Scenes/TequilaScene.unity
+    guid: 8239c30136c31404990b12dda91c0929
+  - enabled: 1
+    path: Assets/Scenes/French75Scene.unity
+    guid: 9f3f3a583000a42a08f42234f2c59191
+  - enabled: 1
+    path: Assets/Scenes/CoffeeScene.unity
+    guid: 381d74ea847794e2991a9cd2549c9bc8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

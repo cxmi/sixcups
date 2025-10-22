@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Ink.Runtime;
 using TMPro;
 using UnityEngine;
@@ -16,10 +17,18 @@ public class NewInkTest : MonoBehaviour
     [SerializeField] private Transform contentParent;              // ScrollView/Viewport/Content
     [SerializeField] private TextMeshProUGUI messagePrefab;        // Prefab for story messages
     [SerializeField] private Button choiceButtonPrefab;            // Prefab for choice buttons
+    [SerializeField] private String currentTag;
+    public GameObject background;
+    public GameObject damageImage;
+    public AudioSource audioSource;
+    public AudioClip clip;
+    
+    public float flashInterval = 0.2f;
 
     private void Start()
     {
        // scrollRect.verticalNormalizedPosition = 0f;
+       audioSource = GetComponent<AudioSource>();
 
         if (inkJSONAsset == null)
         {
@@ -36,10 +45,28 @@ public class NewInkTest : MonoBehaviour
         while (story.canContinue)
         {
             string line = story.Continue().Trim();
+            
+            // Check for tags
+            List<string> currentTags = story.currentTags;
+            if (currentTags.Count > 0)
+            {
+                Debug.Log("Tags found:");
+                foreach (string tag in currentTags)
+                {
+                    //Debug.Log("- " + tag);
+                    
+                    currentTag = tag;
+                    // You can parse and react to tags here
+                    // For example, if a tag is "#character:John", you can extract "John"
+                    // and update a character portrait.
+                }
+            }
+            
             AddMessage(line);
             //yield return new WaitForSeconds(0.25f); // Add delay for chat feel
             
             yield return WaitForSpaceKey();
+            
         }
 
         if (story.currentChoices.Count > 0)
@@ -51,14 +78,22 @@ public class NewInkTest : MonoBehaviour
         }
         else
         {
-            AddMessage("<i>To be continued.</i>"); //THIS IS THE ENDING THINGY
+            //AddMessage("<i>To be continued.</i>"); //THIS IS THE ENDING THINGY
         }
     }
 
     private void AddMessage(string text)
     {
+        if (currentTag == "damage")
+        {
+            StartCoroutine(FlashCoroutine());
+            currentTag = "";
+
+        }
+        
         var message = Instantiate(messagePrefab, contentParent);
         message.text = text;
+        audioSource.PlayOneShot(clip);
 
         
         
@@ -123,5 +158,16 @@ public class NewInkTest : MonoBehaviour
         yield return null; 
         Canvas.ForceUpdateCanvases(); // Force layout to update now
         scrollRect.verticalNormalizedPosition = 0f; // Scroll to bottom
+    }
+    
+    private IEnumerator FlashCoroutine()
+    {
+        for (int i = 0; i < 2; i++) // Flash twice
+        {
+            damageImage.SetActive(true);
+            yield return new WaitForSeconds(flashInterval);
+            damageImage.SetActive(false);
+            yield return new WaitForSeconds(flashInterval);
+        }
     }
 }

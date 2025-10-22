@@ -22,8 +22,13 @@ public class TextStyleInk : MonoBehaviour
     [SerializeField] private TextMeshProUGUI messagePrefab;// Prefab for choice buttons
 
     [SerializeField] private String currentTag;
+    
+    public AudioSource audioSource;
+    public AudioClip clip;
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
        // scrollRect.verticalNormalizedPosition = 0f;
 
         if (inkJSONAsset == null)
@@ -50,7 +55,7 @@ public class TextStyleInk : MonoBehaviour
                 Debug.Log("Tags found:");
                 foreach (string tag in currentTags)
                 {
-                    Debug.Log("- " + tag);
+                    //Debug.Log("- " + tag);
                     
                     currentTag = tag;
                     // You can parse and react to tags here
@@ -91,16 +96,22 @@ public class TextStyleInk : MonoBehaviour
         {
             var message = Instantiate(herMessagePrefab, contentParent);
             message.text = text;
+            audioSource.PlayOneShot(clip);
+
         }
         else if (currentTag == "him")
         {
             var message = Instantiate(hisMessagePrefab, contentParent);
             message.text = text;
+            audioSource.PlayOneShot(clip);
+
         }
         else
         {
             var message = Instantiate(messagePrefab, contentParent);
             message.text = text;
+            audioSource.PlayOneShot(clip);
+
         }
         
 

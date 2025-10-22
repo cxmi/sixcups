@@ -11,11 +11,16 @@ public class ColorChanger : MonoBehaviour
     public Color startingColor;
     public Color hoverColor;
 
+    public AudioSource audioSource;
+    public AudioClip audioClip;
+
+    private bool audioPlaying;
     //public Scene destinationScene;
     public string destSceneName;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         image = GetComponent<Image>();
         startingColor = image.color;
         //destSceneName = destinationScene.name;
@@ -30,11 +35,17 @@ public class ColorChanger : MonoBehaviour
     private void OnMouseOver()
     {
         image.color = hoverColor;
+        if (!audioPlaying)
+        {
+            audioSource.PlayOneShot(audioClip);
+            audioPlaying = true;
+        }
     }
 
     private void OnMouseExit()
     {
         image.color = startingColor;
+        audioPlaying = false;
     }
 
     public void OnMouseDown()
