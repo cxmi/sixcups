@@ -1,11 +1,11 @@
 hey #him
 
-happy birthday. #him
+happy birthday #him
 
-ive been thinking about what we’ve been thruog together lately. #him
+ive been thinking about what we’ve been thruog together lately #him
 and that im  grateful for it, ultimately #him
 and for phoebe #him
-shes so good. maybe more thanks to you than to me, haha #him
+shes so good, maybe more thanks to you than to me, haha #him
 anywya just thinkign about the good times is all #him
 hope yorew having a good one #him
 
@@ -40,7 +40,7 @@ Shes with the babysitter #wife
 
 yo’re not with phoebe on your bihrday? #him
 
-We had cake earlier @wife
+We had cake earlier #wife
 
 i mena like #him
 i dont want to tell you what to do but i really thnkk you sholud be with pheobe on your birtdahy #him
@@ -52,14 +52,15 @@ ar you on a dtae or sthening? #him
 ... #him
 pldase ereposnd #him
 ... #him
-is it adate? ar you with al? jason? #him
+is it adate? ar you with sam? jason? #him
 jess? #him
 ... #him
 ur old boss? #him
 ... #him
 dothey all know your fuckign all of them? #him
 do hey knwo? #him
-does al know youre cheating? #him
+does sam know you;; cheat on him? #him
+her* or whatevre the fuck his pronnuns re now #him
 tht u will fuck antyhing with a heartbeat #him
 im gonna come get phoebe #him
 she shndlnnt be arouns u #him
@@ -68,7 +69,7 @@ Sure, come get her, you sound sober enough to drive #wife
 
 fckwey #him
 fuck you* #him
-we had evauiehrng ou just had to gofusq it aip so bad #him
+we had evauiehrng you just had to gofusq it aip so bad #him
 
 you isud it uousrelf ew were a giiufd team #him
 fucj #him

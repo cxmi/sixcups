@@ -459,6 +459,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2090415804}
+  - {fileID: 1108534384}
   m_Father: {fileID: 189238919}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -545,6 +546,7 @@ MonoBehaviour:
   damageImage: {fileID: 0}
   audioSource: {fileID: 0}
   clip: {fileID: 0}
+  flashInterval: 0.2
 --- !u!4 &387458514
 Transform:
   m_ObjectHideFlags: 0
@@ -1608,12 +1610,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108534381}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.83106565, y: -0.599, z: 0.42}
-  m_LocalScale: {x: 0.31541732, y: 0.31541732, z: 0.31541732}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.2454643, y: 1.632721, z: -7047.379}
+  m_LocalScale: {x: 24.8143, y: 24.8143, z: 24.8143}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 213333459}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1195512328
 GameObject:
@@ -3241,4 +3243,3 @@ SceneRoots:
   - {fileID: 189238919}
   - {fileID: 675072953}
   - {fileID: 387458514}
-  - {fileID: 1108534384}

@@ -18,7 +18,7 @@ You think you could kill a mosquito right now, with your B.A.V.
 
 She’s wearing a black one-piece swimsuit to cover the scar. You told her she still looked good, but she didn’t believe you, hasn’t believed you since her C-section and emergency hysterectomy last May. 
 
-But she sure seemed to believe Al, and Jason, and Jess, and whoever the hell else she’s managed to sleep with since. 
+But she sure seemed to believe Sam, and Jason, and Jess, and whoever the hell else she’s managed to sleep with since. 
 
 You thought maybe you’d try to be cool about it, since, you know, your wife almost died. 
 

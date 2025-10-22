@@ -18,6 +18,7 @@ public class NewInkTest : MonoBehaviour
     [SerializeField] private TextMeshProUGUI messagePrefab;        // Prefab for story messages
     [SerializeField] private Button choiceButtonPrefab;            // Prefab for choice buttons
     [SerializeField] private String currentTag;
+    //public Button meanChoicePrefab;
     public GameObject background;
     public GameObject damageImage;
     public AudioSource audioSource;
@@ -50,7 +51,7 @@ public class NewInkTest : MonoBehaviour
             List<string> currentTags = story.currentTags;
             if (currentTags.Count > 0)
             {
-                Debug.Log("Tags found:");
+                //Debug.Log("Tags found:");
                 foreach (string tag in currentTags)
                 {
                     //Debug.Log("- " + tag);
@@ -73,6 +74,7 @@ public class NewInkTest : MonoBehaviour
         {
             foreach (Choice choice in story.currentChoices)
             {
+                
                 CreateChoiceButton(choice);
             }
         }
@@ -107,24 +109,27 @@ public class NewInkTest : MonoBehaviour
 
     private void CreateChoiceButton(Choice choice)
     {
-        var button = Instantiate(choiceButtonPrefab, contentParent);
-        var tmpText = button.GetComponentInChildren<TextMeshProUGUI>();
-        if (tmpText != null)
-        {
-            tmpText.text = choice.text.Trim();
-        }
+        
+            var button = Instantiate(choiceButtonPrefab, contentParent);
+            var tmpText = button.GetComponentInChildren<TextMeshProUGUI>();
+            if (tmpText != null)
+            {
+                tmpText.text = choice.text.Trim();
+            }
 
-        button.onClick.AddListener(() =>
-        {
-            story.ChooseChoiceIndex(choice.index);
-            ClearChoices();
-            StartCoroutine(PlayStory());
-        });
+            button.onClick.AddListener(() =>
+            {
+                story.ChooseChoiceIndex(choice.index);
+                ClearChoices();
+                StartCoroutine(PlayStory());
+            });
 
-        // Scroll after adding button
-        // Canvas.ForceUpdateCanvases();
-        // scrollRect.verticalNormalizedPosition = 0f;
-        StartCoroutine(ScrollToBottomNextFrame());
+            // Scroll after adding button
+            // Canvas.ForceUpdateCanvases();
+            // scrollRect.verticalNormalizedPosition = 0f;
+            StartCoroutine(ScrollToBottomNextFrame());
+        
+       
 
     }
 

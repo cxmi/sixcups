@@ -12,21 +12,24 @@ Phoebe: Hope it doesn't come to that then.
 Phoebe: Yuuup.
 Phoebe: ...
 Phoebe: Umm. So why did you text-
-****** Saw Al in your story last week...[] What's that guy been up to? -> hows_al
-**** I'll feel a lot better if I bash Al's teeth in.[] What's the deal? -> hows_al
-*** Thinking a lot lately about that asshole Al. -> hows_al
-** And how's that piece of shit Al? -> hows_al
+****** Saw you post about Sam last week...[] What's that guy been up to? #aggro
+-> hows_al
+**** I'd sure feel a lot better if I bash Sam's teeth in #aggro
+-> hows_al
+*** Thinking a lot lately about Sam and what a piece of shit- #aggro
+-> hows_al
+** And how's that fucker Sam? # aggro 
+-> hows_al
 
 === hows_al ===
 
-Still hovering around her like a gnat?
 
 Phoebe: Oh fuck off, Dad. Is that what this is about? #damage
-Phoebe: Mom’s not even with Al anymore.
-* HAHAHA.[] Thats rich. 
+Phoebe: Mom’s not even with Sam anymore.
+* HAHAHA[]. Thats rich. 
 Phoebe: God. Fuck.
 Phoebe: THIS is what you wanted to talk about? #damage
-Phoebe: Al practically raised me, you know? After you pulled that shit?
+Phoebe: Sam practically raised me, you know? After you pulled that shit?
 Phoebe: You know what, actually. I’m not doing this. I’m leaving.
 ** Wait-
 Phoebe: No, I’m not doing this again. 
