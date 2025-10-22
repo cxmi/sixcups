@@ -692,13 +692,7 @@ PlayerSettings:
   windowsGamepadBackendHint: 0
   cloudProjectId: ec9390c7-7478-4a07-8e1c-1f224c49835b
   framebufferDepthMemorylessMode: 0
-  qualitySettingsNames:
-  - Very Low
-  - Low
-  - Medium
-  - High
-  - Very High
-  - Ultra
+  qualitySettingsNames: []
   projectName: Prototype7andup
   organizationId: christinexmi
   cloudEnabled: 0
