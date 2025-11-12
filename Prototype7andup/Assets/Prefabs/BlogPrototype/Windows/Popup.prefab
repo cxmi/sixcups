@@ -1070,7 +1070,7 @@ GameObject:
   - component: {fileID: 1996978042838451205}
   - component: {fileID: 4170784649535655384}
   m_Layer: 5
-  m_Name: Death
+  m_Name: Popup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

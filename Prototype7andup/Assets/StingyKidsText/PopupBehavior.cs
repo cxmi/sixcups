@@ -86,11 +86,13 @@ public class PopupBehavior : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         {
             lastClicked.image.sprite = lastClicked.inactiveWindow;
         }
-        
+        //bring window to front
         gameObject.transform.SetParent(parentTransform, true);
         gameObject.transform.SetAsLastSibling();
         image.sprite = activeWindow;
         lastClicked = this;
+        
+        
     }
 
     public void OnPointerUp(PointerEventData eventData)

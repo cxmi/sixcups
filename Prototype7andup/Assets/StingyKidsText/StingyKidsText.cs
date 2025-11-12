@@ -38,6 +38,18 @@ public class StingyKidsText : MonoBehaviour
     private float duration = 1f;
     public TextMeshProUGUI progressText;
     
+    //FOLDERS
+
+    public TextMeshProUGUI keepText;
+    public TextMeshProUGUI trashText;
+    
+    //BUTTONS
+
+    public TextMeshProUGUI rememberText;
+    public TextMeshProUGUI forgetText;
+    public Color enableColor;
+    public Color disableColor;
+    
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -288,12 +300,27 @@ public class StingyKidsText : MonoBehaviour
         ClearStory();
         storyIsPlaying = false;
         progressBar.fillAmount = 0f;
+        noProgressing = true;
 
     }
 
     private void Update()
     {
-        int percent = (int)progressBar.fillAmount * 100;
+        int percent = (int)(progressBar.fillAmount * 100);
         progressText.text = percent.ToString()+"%";
+
+        keepText.text = "Kept (" + rememberedStories + ")";
+        trashText.text = "Forgotten (" + forgottenStories + ")";
+
+        if (noProgressing)
+        {
+            rememberText.color = disableColor;
+            forgetText.color = disableColor;
+        }
+        else
+        {
+            rememberText.color = enableColor;
+            forgetText.color = enableColor;
+        }
     }
 }
