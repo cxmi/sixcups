@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class StingyKidsText : MonoBehaviour
 {
     [Header("Ink Story")]
-    [SerializeField] private TextAsset inkJSONAsset;
+    public TextAsset inkJSONAsset;
     private Story story;
 
     [Header("UI References")]
@@ -22,9 +22,22 @@ public class StingyKidsText : MonoBehaviour
     [SerializeField] private TextMeshProUGUI messagePrefab;// Prefab for choice buttons
 
     [SerializeField] private String currentTag;
+    public GameObject mainWindow;
     
     public AudioSource audioSource;
     public AudioClip clip;
+    
+    public bool storyIsPlaying = false;
+    private bool noProgressing = false;
+    private int rememberedStories = 0;
+    private int forgottenStories = 0;
+    
+    // SLIDER
+
+    public Image progressBar;
+    private float duration = 1f;
+    public TextMeshProUGUI progressText;
+    
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -37,12 +50,15 @@ public class StingyKidsText : MonoBehaviour
             return;
         }
 
+        
         story = new Story(inkJSONAsset.text);
         StartCoroutine(PlayStory());
     }
 
-    private IEnumerator PlayStory()
+    public IEnumerator PlayStory()
     {
+        storyIsPlaying = true;
+        noProgressing = true;
         while (story.canContinue)
         {
             string line = story.Continue().Trim();
@@ -85,12 +101,18 @@ public class StingyKidsText : MonoBehaviour
         {
             //AddMessage("<i>To be continued.</i>"); //THIS IS THE ENDING THINGY
         }
+        noProgressing = false;
+        
     }
 
     private void AddMessage(string text)
     {
         
         //check tags here
+        //GameObject canvasInstance = Instantiate(canvasPrefab);
+       // Instantiate(messagePrefab, canvasInstance.transform);
+
+        //Instantiate(messagePrefab, canvasInstance.transform);
 
         if (currentTag == "quote")
         {
@@ -178,5 +200,100 @@ public class StingyKidsText : MonoBehaviour
         yield return null; 
         Canvas.ForceUpdateCanvases(); // Force layout to update now
         scrollRect.verticalNormalizedPosition = 0f; // Scroll to bottom
+    }
+
+    public void StartStory()
+    { 
+        
+        // scrollRect = mainWindow.transform.Find("Scroll View").GetComponent<ScrollRect>();
+        // contentParent = mainWindow.transform.Find("Scroll View/Viewport/Content").GetComponent<RectTransform>();
+
+        //Debug.Log("Story can continue? " + story.canContinue);
+        ClearStory();
+        story = new Story(inkJSONAsset.text);
+
+        StartCoroutine(PlayStory());
+
+    }
+    
+    public void ClearStory()
+    {
+        if (contentParent == null)
+        {
+            Debug.LogWarning("ClearStory() called but contentParent is null!");
+            return;
+        }
+
+        // Loop through all children of contentParent and destroy them
+        foreach (Transform child in contentParent)
+        {
+            Destroy(child.gameObject);
+        }
+        
+
+        // Optionally scroll back to top
+        if (scrollRect != null)
+            scrollRect.verticalNormalizedPosition = 1f;
+
+        Debug.Log("Story cleared!");
+    }
+
+
+    public void RememberStory()
+    {
+        if (noProgressing) return;
+        // ClearStory();
+        // rememberedStories++;
+        // storyIsPlaying = false;
+
+        StartCoroutine(LoadProgress());
+        rememberedStories++;
+
+
+    }
+
+    public void ForgetStory()
+    {
+        if (noProgressing) return;
+        //ClearStory();
+        StartCoroutine(LoadProgress());
+        forgottenStories++;
+        //storyIsPlaying = false;
+
+    }
+
+    private IEnumerator LoadProgress()
+    {
+        // Reset fill
+        progressBar.fillAmount = 0f;
+
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / duration);
+
+            // Ease-out curve: fast at start, slow at end
+            float eased = Mathf.Sin(t * Mathf.PI * 0.5f); // Sin easing
+            progressBar.fillAmount = eased;
+
+            yield return null;
+        }
+
+        // Ensure it's fully filled
+        progressBar.fillAmount = 1f;
+
+        // Now clear story and update variables
+        ClearStory();
+        storyIsPlaying = false;
+        progressBar.fillAmount = 0f;
+
+    }
+
+    private void Update()
+    {
+        int percent = (int)progressBar.fillAmount * 100;
+        progressText.text = percent.ToString()+"%";
     }
 }
