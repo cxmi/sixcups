@@ -2746,11 +2746,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 42dbbdcc60f7f41f6bb3657b00941491, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.66
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2914,7 +2914,8 @@ MonoBehaviour:
   currentTag: 
   mainWindow: {fileID: 5876636918292525872, guid: fe2aa25fb03414c77bf4707d1d3b9504, type: 3}
   audioSource: {fileID: 0}
-  clip: {fileID: 8300000, guid: 9d98cdb14410b4376b4edc563b2abb4f, type: 3}
+  clip: {fileID: 8300000, guid: a97cb2894aff94060a5262c0891faeb5, type: 3}
+  folderClip: {fileID: 8300000, guid: 80040c6198d764e2badac48ad7b0ea49, type: 3}
   storyIsPlaying: 0
   progressBar: {fileID: 769910824}
   progressText: {fileID: 1586058324}
@@ -3667,7 +3668,7 @@ PrefabInstance:
     - target: {fileID: 3707363581283833713, guid: 0bb7762d0a0594c2c95ff34771a7eca0, type: 3}
       propertyPath: relevantInkJSON
       value: 
-      objectReference: {fileID: 4900000, guid: 5f4d3fb0f999f432abe1d80ac9fd73d4, type: 3}
+      objectReference: {fileID: 4900000, guid: 9a91cdd384b1d490b83cbe4916842685, type: 3}
     - target: {fileID: 6136476369163281233, guid: 0bb7762d0a0594c2c95ff34771a7eca0, type: 3}
       propertyPath: m_text
       value: As the contraction started, I told myself, and the baby, that it was

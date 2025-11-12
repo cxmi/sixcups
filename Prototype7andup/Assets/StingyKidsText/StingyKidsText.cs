@@ -26,6 +26,7 @@ public class StingyKidsText : MonoBehaviour
     
     public AudioSource audioSource;
     public AudioClip clip;
+    public AudioClip folderClip;
     
     public bool storyIsPlaying = false;
     private bool noProgressing = false;
@@ -298,6 +299,7 @@ public class StingyKidsText : MonoBehaviour
 
         // Now clear story and update variables
         ClearStory();
+        audioSource.PlayOneShot(folderClip);
         storyIsPlaying = false;
         progressBar.fillAmount = 0f;
         noProgressing = true;
