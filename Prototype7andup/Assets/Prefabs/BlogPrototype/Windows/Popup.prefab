@@ -1050,7 +1050,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -1.0992317, w: 0}
+  m_margin: {x: 0, y: 0, z: -66.35183, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1127,6 +1127,7 @@ MonoBehaviour:
   parentTransform: {fileID: 0}
   stingyKidsText: {fileID: 0}
   mainWindow: {fileID: 5876636918292525872, guid: fe2aa25fb03414c77bf4707d1d3b9504, type: 3}
+  canvas: {fileID: 0}
   relevantInkJSON: {fileID: 4900000, guid: 2ea1b99aea03f4127b01dfc3d54bd07e, type: 3}
 --- !u!114 &1996978042838451205
 MonoBehaviour:

@@ -1,4 +1,5 @@
 Feb 10, 2007#roman
+I needed a birthday poem today and was drawing blanks, so I took a chance on google. This spare and elegant piece by Kooser turned up.  I feel lucky. #roman
 Just past dawn, the sun stands #quote
 with its heavy red head #quote
 in a black stanchion of trees, #quote
@@ -16,6 +17,6 @@ of my name.#quote
 
 \-\-by Ted Kooser #quote
 
-I needed a birthday poem today and was drawing blanks, so I took a chance on google. This spare and elegant piece by Kooser turned up.  I feel lucky. #roman
+
 
 -> DONE
