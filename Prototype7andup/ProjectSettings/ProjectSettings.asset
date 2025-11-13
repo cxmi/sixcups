@@ -13,10 +13,10 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: christine mi
-  productName: six of cups
+  productName: memory access
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.28235295, g: 0.08627451, b: 0.12941177, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0.16462654, g: 0.16220185, b: 0.4245283, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
