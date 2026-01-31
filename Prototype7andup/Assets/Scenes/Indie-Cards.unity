@@ -850,6 +850,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateUI
   rotationSpeed: 12
+  fastSpeed: -10
+  rampUpTime: 0.1
+  holdTime: 0.2
+  rampDownTime: 0.3
 --- !u!1 &169855843
 GameObject:
   m_ObjectHideFlags: 0
@@ -2080,6 +2084,7 @@ MonoBehaviour:
   choiceIndex: 0
   inkManager: {fileID: 259411428}
   choiceText: earth
+  rotateUi: {fileID: 0}
 --- !u!114 &465773039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2096,7 +2101,7 @@ MonoBehaviour:
   startingColor: {r: 0, g: 0, b: 0, a: 0}
   hoverColor: {r: 1, g: 0.9786654, b: 0.8632076, a: 1}
   audioSource: {fileID: 0}
-  audioClip: {fileID: 8300000, guid: a8575553eb5ec402d8286abb223adbaf, type: 3}
+  audioClip: {fileID: 8300000, guid: f55d96755bdd2445f8afe7e095a226e1, type: 3}
   destSceneName: 
 --- !u!1 &519420028
 GameObject:
@@ -2871,6 +2876,7 @@ MonoBehaviour:
   choiceIndex: 0
   inkManager: {fileID: 259411428}
   choiceText: fire
+  rotateUi: {fileID: 0}
 --- !u!114 &748907241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2887,7 +2893,7 @@ MonoBehaviour:
   startingColor: {r: 0, g: 0, b: 0, a: 0}
   hoverColor: {r: 1, g: 0.9786654, b: 0.8632076, a: 1}
   audioSource: {fileID: 0}
-  audioClip: {fileID: 8300000, guid: a8575553eb5ec402d8286abb223adbaf, type: 3}
+  audioClip: {fileID: 8300000, guid: f55d96755bdd2445f8afe7e095a226e1, type: 3}
   destSceneName: 
 --- !u!1 &768876457
 GameObject:
@@ -3643,6 +3649,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateUI
   rotationSpeed: -3
+  fastSpeed: -340
+  rampUpTime: 0.1
+  holdTime: 0.3
+  rampDownTime: 0.9
 --- !u!1 &982689043
 GameObject:
   m_ObjectHideFlags: 0
@@ -5220,6 +5230,7 @@ MonoBehaviour:
   choiceIndex: 0
   inkManager: {fileID: 259411428}
   choiceText: water
+  rotateUi: {fileID: 0}
 --- !u!114 &1401769281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5236,7 +5247,7 @@ MonoBehaviour:
   startingColor: {r: 0, g: 0, b: 0, a: 0}
   hoverColor: {r: 1, g: 0.9786654, b: 0.8632076, a: 1}
   audioSource: {fileID: 0}
-  audioClip: {fileID: 8300000, guid: a8575553eb5ec402d8286abb223adbaf, type: 3}
+  audioClip: {fileID: 8300000, guid: f55d96755bdd2445f8afe7e095a226e1, type: 3}
   destSceneName: 
 --- !u!1 &1546343798
 GameObject:
@@ -5780,6 +5791,7 @@ MonoBehaviour:
   choiceIndex: 0
   inkManager: {fileID: 259411428}
   choiceText: wood
+  rotateUi: {fileID: 0}
 --- !u!114 &1642187962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5796,7 +5808,7 @@ MonoBehaviour:
   startingColor: {r: 0, g: 0, b: 0, a: 0}
   hoverColor: {r: 1, g: 0.9786654, b: 0.8632076, a: 1}
   audioSource: {fileID: 0}
-  audioClip: {fileID: 8300000, guid: a8575553eb5ec402d8286abb223adbaf, type: 3}
+  audioClip: {fileID: 8300000, guid: f55d96755bdd2445f8afe7e095a226e1, type: 3}
   destSceneName: 
 --- !u!1 &1654003280
 GameObject:
@@ -5996,6 +6008,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateUI
   rotationSpeed: 12
+  fastSpeed: -10
+  rampUpTime: 0.1
+  holdTime: 0.2
+  rampDownTime: 0.3
 --- !u!1 &1745568707
 GameObject:
   m_ObjectHideFlags: 0
@@ -6249,6 +6265,7 @@ MonoBehaviour:
   choiceIndex: 0
   inkManager: {fileID: 259411428}
   choiceText: metal
+  rotateUi: {fileID: 0}
 --- !u!114 &1745568716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6265,7 +6282,7 @@ MonoBehaviour:
   startingColor: {r: 0, g: 0, b: 0, a: 0}
   hoverColor: {r: 1, g: 0.9786654, b: 0.8632076, a: 1}
   audioSource: {fileID: 0}
-  audioClip: {fileID: 8300000, guid: a8575553eb5ec402d8286abb223adbaf, type: 3}
+  audioClip: {fileID: 8300000, guid: f55d96755bdd2445f8afe7e095a226e1, type: 3}
   destSceneName: 
 --- !u!1 &1834175732
 GameObject:
