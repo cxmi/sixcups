@@ -1841,6 +1841,8 @@ GameObject:
   - component: {fileID: 465773034}
   - component: {fileID: 465773033}
   - component: {fileID: 465773032}
+  - component: {fileID: 465773038}
+  - component: {fileID: 465773039}
   m_Layer: 5
   m_Name: Earth
   m_TagString: Untagged
@@ -2063,6 +2065,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465773030}
   m_CullTransparentMesh: 1
+--- !u!114 &465773038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465773030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ee96337ee69406fa5a88527d741f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceClicker
+  choiceIndex: 0
+  inkManager: {fileID: 259411428}
+  choiceText: earth
+--- !u!114 &465773039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465773030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c318eee36fe49719122bbb33b526df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverColor
+  image: {fileID: 0}
+  startingColor: {r: 0, g: 0, b: 0, a: 0}
+  hoverColor: {r: 1, g: 0.9786654, b: 0.8632076, a: 1}
+  audioSource: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: a8575553eb5ec402d8286abb223adbaf, type: 3}
+  destSceneName: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2597,6 +2632,8 @@ GameObject:
   - component: {fileID: 748907236}
   - component: {fileID: 748907235}
   - component: {fileID: 748907234}
+  - component: {fileID: 748907240}
+  - component: {fileID: 748907241}
   m_Layer: 5
   m_Name: Fire
   m_TagString: Untagged
@@ -2819,6 +2856,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748907232}
   m_CullTransparentMesh: 1
+--- !u!114 &748907240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748907232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ee96337ee69406fa5a88527d741f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceClicker
+  choiceIndex: 0
+  inkManager: {fileID: 259411428}
+  choiceText: fire
+--- !u!114 &748907241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748907232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c318eee36fe49719122bbb33b526df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverColor
+  image: {fileID: 0}
+  startingColor: {r: 0, g: 0, b: 0, a: 0}
+  hoverColor: {r: 1, g: 0.9786654, b: 0.8632076, a: 1}
+  audioSource: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: a8575553eb5ec402d8286abb223adbaf, type: 3}
+  destSceneName: 
 --- !u!1 &768876457
 GameObject:
   m_ObjectHideFlags: 0
@@ -4911,6 +4981,8 @@ GameObject:
   - component: {fileID: 1401769276}
   - component: {fileID: 1401769275}
   - component: {fileID: 1401769274}
+  - component: {fileID: 1401769280}
+  - component: {fileID: 1401769281}
   m_Layer: 5
   m_Name: Water
   m_TagString: Untagged
@@ -5133,6 +5205,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401769272}
   m_CullTransparentMesh: 1
+--- !u!114 &1401769280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401769272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ee96337ee69406fa5a88527d741f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceClicker
+  choiceIndex: 0
+  inkManager: {fileID: 259411428}
+  choiceText: water
+--- !u!114 &1401769281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401769272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c318eee36fe49719122bbb33b526df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverColor
+  image: {fileID: 0}
+  startingColor: {r: 0, g: 0, b: 0, a: 0}
+  hoverColor: {r: 1, g: 0.9786654, b: 0.8632076, a: 1}
+  audioSource: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: a8575553eb5ec402d8286abb223adbaf, type: 3}
+  destSceneName: 
 --- !u!1 &1546343798
 GameObject:
   m_ObjectHideFlags: 0
@@ -5905,6 +6010,8 @@ GameObject:
   - component: {fileID: 1745568711}
   - component: {fileID: 1745568710}
   - component: {fileID: 1745568709}
+  - component: {fileID: 1745568715}
+  - component: {fileID: 1745568716}
   m_Layer: 5
   m_Name: Metal
   m_TagString: Untagged
@@ -6127,6 +6234,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745568707}
   m_CullTransparentMesh: 1
+--- !u!114 &1745568715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745568707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ee96337ee69406fa5a88527d741f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceClicker
+  choiceIndex: 0
+  inkManager: {fileID: 259411428}
+  choiceText: metal
+--- !u!114 &1745568716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745568707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c318eee36fe49719122bbb33b526df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverColor
+  image: {fileID: 0}
+  startingColor: {r: 0, g: 0, b: 0, a: 0}
+  hoverColor: {r: 1, g: 0.9786654, b: 0.8632076, a: 1}
+  audioSource: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: a8575553eb5ec402d8286abb223adbaf, type: 3}
+  destSceneName: 
 --- !u!1 &1834175732
 GameObject:
   m_ObjectHideFlags: 0
