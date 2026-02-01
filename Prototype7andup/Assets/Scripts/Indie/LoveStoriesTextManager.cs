@@ -121,6 +121,18 @@ public class LoveStoriesTextManager : MonoBehaviour
             {
                 FadeOut(whoCanvasGroup);
             }
+            else if (previousTag == "what" && currentTag != "what")
+            {
+                FadeOut(whatCanvasGroup);
+            }
+            else if (previousTag == "when" && currentTag != "when")
+            {
+                FadeOut(whenCanvasGroup);
+            }
+            else if (previousTag == "why" && currentTag != "why")
+            {
+                FadeOut(whoCanvasGroup);
+            }
 
             previousTag = currentTag;
             AddMessage(line.text);
@@ -224,6 +236,42 @@ public class LoveStoriesTextManager : MonoBehaviour
                 StartFade(whoCanvasGroup);
             }
             var message = Instantiate(messagePrefab, contentParentWho);
+            message.text = text;
+            audioSource.PlayOneShot(clip);
+            currentTag = "";
+        }
+        else if (currentTag == "what")
+        { 
+            
+            if (whatCanvasGroup.alpha == 0f)
+            {
+                StartFade(whatCanvasGroup);
+            }
+            var message = Instantiate(messagePrefab, contentParentWhat);
+            message.text = text;
+            audioSource.PlayOneShot(clip);
+            currentTag = "";
+        }
+        else if (currentTag == "when")
+        { 
+            
+            if (whenCanvasGroup.alpha == 0f)
+            {
+                StartFade(whenCanvasGroup);
+            }
+            var message = Instantiate(messagePrefab, contentParentWhen);
+            message.text = text;
+            audioSource.PlayOneShot(clip);
+            currentTag = "";
+        }
+        else if (currentTag == "why")
+        { 
+            
+            if (whyCanvasGroup.alpha == 0f)
+            {
+                StartFade(whyCanvasGroup);
+            }
+            var message = Instantiate(messagePrefab, contentParentWhy);
             message.text = text;
             audioSource.PlayOneShot(clip);
             currentTag = "";
