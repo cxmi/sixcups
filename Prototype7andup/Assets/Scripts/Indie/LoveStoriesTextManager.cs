@@ -23,6 +23,13 @@ public class LoveStoriesTextManager : MonoBehaviour
     public Transform contentParentWhen;
     public ScrollRect scrollRectWhy;
     public Transform contentParentWhy;
+    
+    public CanvasGroup whoCanvasGroup;
+    public CanvasGroup whatCanvasGroup;
+    public CanvasGroup whenCanvasGroup;
+    public CanvasGroup whyCanvasGroup;
+
+    
     [SerializeField] private TextMeshProUGUI messagePrefab;        // Prefab for story messages
     [SerializeField] private Button choiceButtonPrefab;            // Prefab for choice buttons
     [SerializeField] private String currentTag;
@@ -33,6 +40,10 @@ public class LoveStoriesTextManager : MonoBehaviour
     public AudioClip clip;
     
     public float flashInterval = 0.2f;
+    
+    //for fading OUT the canvas groups
+    private string previousTag = null;
+    private Coroutine fadeCoroutine;
 
     //this is for looping through the options
     public int sceneIndex = 1;
@@ -103,6 +114,15 @@ public class LoveStoriesTextManager : MonoBehaviour
 
             InkLine line = lineQueue.Dequeue();
             currentTag = line.tag;
+
+
+            // Detect end of #who block
+            if (previousTag == "who" && currentTag != "who")
+            {
+                FadeOut(whoCanvasGroup);
+            }
+
+            previousTag = currentTag;
             AddMessage(line.text);
 
             firstLine = false;
@@ -196,7 +216,13 @@ public class LoveStoriesTextManager : MonoBehaviour
         //
         // }
         if (currentTag == "who")
-        {
+        { 
+            //TODO: DO THIS FOR ALL THE when what why 
+            
+            if (whoCanvasGroup.alpha == 0f)
+            {
+                StartFade(whoCanvasGroup);
+            }
             var message = Instantiate(messagePrefab, contentParentWho);
             message.text = text;
             audioSource.PlayOneShot(clip);
@@ -288,4 +314,53 @@ public class LoveStoriesTextManager : MonoBehaviour
     //         yield return new WaitForSeconds(flashInterval);
     //     }
     // }
+    
+    public void StartFade(CanvasGroup canvasGroup)
+    {
+        StartCoroutine(FadeInScrollView(canvasGroup, 1f));
+    }
+    public IEnumerator FadeInScrollView(CanvasGroup canvasGroup, float duration)
+    {
+        float elapsed = 0f;
+        canvasGroup.alpha = 0f;
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            canvasGroup.alpha = Mathf.Clamp01(elapsed / duration);
+            yield return null;
+        }
+
+        canvasGroup.alpha = 1f;
+        canvasGroup.interactable = true;
+        canvasGroup.blocksRaycasts = true;
+    }
+    
+    public void FadeOut(CanvasGroup canvasGroup)
+    {
+        if (fadeCoroutine != null)
+            StopCoroutine(fadeCoroutine);
+
+        fadeCoroutine = StartCoroutine(FadeOutScrollView(canvasGroup, 1f));
+    }
+
+    public IEnumerator FadeOutScrollView(CanvasGroup canvasGroup, float duration)
+    {
+        float elapsed = 0f;
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            canvasGroup.alpha = Mathf.Clamp01(1f - (elapsed / duration));
+            yield return null;
+        }
+
+        canvasGroup.alpha = 0f;
+    }
+
+
 }

@@ -27,6 +27,8 @@ an off-kilter bathroom tile, #who
 a ladybug with too many spots. #who
 
 After a while, you started noticing them too. #who
+
+>>> #who
 ~ gender = "female" 
 
 + [wood2]
