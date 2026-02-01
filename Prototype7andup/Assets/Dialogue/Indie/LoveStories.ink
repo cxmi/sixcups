@@ -16,7 +16,17 @@ VAR gender = "unset"
     -> water1
 
 === wood1 ===
-She always stopped to inspect little things. Details that slipped you by — a still-green leaf in the dead of winter, an off-kilter bathroom tile, a ladybug with too many spots. After a while, you started noticing them too. #who
+She always stopped to inspect little things. #who
+
+Details that slipped you by — #who
+
+a still-green leaf in the dead of winter, #who
+
+an off-kilter bathroom tile, #who
+
+a ladybug with too many spots. #who
+
+After a while, you started noticing them too. #who
 ~ gender = "female" 
 
 + [wood2]

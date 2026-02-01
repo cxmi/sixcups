@@ -20,17 +20,23 @@ public class HoverColor : MonoBehaviour
     int[] lowSemitones = { -24, -17, -15, -12, -9, -5, 0 };
     int[] sadSemitones = { -24, -21, -19, -17, -14, -12, -9, -7, -5, -2, 0 };
     int[] pentatonic = { 0, 2, 4, 7, 9 };
+    
 
 
     private bool audioPlaying;
     //public Scene destinationScene;
     public string destSceneName;
+
+    public LoveStoriesTextManager inkManager;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         image = GetComponent<Image>();
         startingColor = image.color;
+        inkManager = FindFirstObjectByType<LoveStoriesTextManager>();
+        
         //destSceneName = destinationScene.name;
     }
 
@@ -42,7 +48,23 @@ public class HoverColor : MonoBehaviour
 
     private void OnMouseOver()
     {
-        image.color = hoverColor;
+
+        if (!inkManager.canClick)
+        {
+            //maybe theres other sounds that can be played here
+            
+            if (!audioPlaying)
+            {
+                int semi = sadSemitones[Random.Range(0, sadSemitones.Length)];
+                //int semi = pentatonic[Random.Range(0, pentatonic.Length)];
+            
+                audioSource.pitch = Mathf.Pow(2f, semi / 12f);
+                audioSource.PlayOneShot(audioClip, 0.01f);
+                audioPlaying = true;
+            }
+            return;
+        }
+
         if (!audioPlaying)
         {
             int semi = sadSemitones[Random.Range(0, sadSemitones.Length)];
@@ -52,6 +74,8 @@ public class HoverColor : MonoBehaviour
             audioSource.PlayOneShot(audioClip, 0.5f);
             audioPlaying = true;
         }
+        image.color = hoverColor;
+
     }
 
     private void OnMouseExit()

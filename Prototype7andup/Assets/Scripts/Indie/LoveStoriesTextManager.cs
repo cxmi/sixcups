@@ -15,6 +15,14 @@ public class LoveStoriesTextManager : MonoBehaviour
     [Header("UI References")]
     [SerializeField] private ScrollRect scrollRect;                // Scroll View component
     [SerializeField] private Transform contentParent;              // ScrollView/Viewport/Content
+    public ScrollRect scrollRectWho;
+    public Transform contentParentWho;
+    public ScrollRect scrollRectWhat;
+    public Transform contentParentWhat;
+    public ScrollRect scrollRectWhen;
+    public Transform contentParentWhen;
+    public ScrollRect scrollRectWhy;
+    public Transform contentParentWhy;
     [SerializeField] private TextMeshProUGUI messagePrefab;        // Prefab for story messages
     [SerializeField] private Button choiceButtonPrefab;            // Prefab for choice buttons
     [SerializeField] private String currentTag;
@@ -26,7 +34,21 @@ public class LoveStoriesTextManager : MonoBehaviour
     
     public float flashInterval = 0.2f;
 
+    //this is for looping through the options
     public int sceneIndex = 1;
+    
+    //this is for calling all content blocks under a section
+    private Queue<InkLine> lineQueue = new Queue<InkLine>();
+    public float lineDelay = 0.6f; // delay between lines
+    private Coroutine displayRoutine;
+    public bool canClick = true;
+
+
+    private struct InkLine
+    {
+        public string text;
+        public string tag;
+    }
 
     private void Start()
     {
@@ -47,37 +69,52 @@ public class LoveStoriesTextManager : MonoBehaviour
     
     public void ContinueStory()
     {
-        Debug.Log("trying to continue story");
-        if (story.canContinue)
-        {
-            //check for tags
-            List<string> currentTags = story.currentTags;
-            if (currentTags.Count > 0)
-            {
-                //Debug.Log("Tags found:");
-                foreach (string tag in currentTags)
-                {
-                    //Debug.Log("- " + tag);
-                    
-                    currentTag = tag;
-                    // You can parse and react to tags here
-                    // For example, if a tag is "#character:John", you can extract "John"
-                    // and update a character portrait.
-                }
-            }
-            //end check for tags
-            
-            string line = story.Continue();
-            AddMessage(line);
-            Debug.Log(line);
-            // display line in UI
-        }
-        else
+        if (!story.canContinue)
         {
             Debug.Log("Waiting for player input");
+            return;
         }
+        canClick = false;
+
+        while (story.canContinue)
+        {
+            string line = story.Continue();
+
+            // Get tag for THIS line
+            string tag = story.currentTags.Count > 0 ? story.currentTags[0] : null;
+
+            // Enqueue the line + tag
+            lineQueue.Enqueue(new InkLine { text = line, tag = tag });
+        }
+
+        if (displayRoutine == null)
+            displayRoutine = StartCoroutine(DisplayLines());
     }
+
     
+    private IEnumerator DisplayLines()
+    {
+        bool firstLine = true;
+
+        while (lineQueue.Count > 0)
+        {
+            if (!firstLine)
+                yield return new WaitForSeconds(lineDelay);
+
+            InkLine line = lineQueue.Dequeue();
+            currentTag = line.tag;
+            AddMessage(line.text);
+
+            firstLine = false;
+        }
+
+        canClick = true;
+        displayRoutine = null;
+    }
+
+
+
+
     public void Choose(int choiceIndex)
     {
         story.ChooseChoiceIndex(choiceIndex);
@@ -158,10 +195,20 @@ public class LoveStoriesTextManager : MonoBehaviour
         //     currentTag = "";
         //
         // }
-        
-        var message = Instantiate(messagePrefab, contentParent);
-        message.text = text;
-        audioSource.PlayOneShot(clip);
+        if (currentTag == "who")
+        {
+            var message = Instantiate(messagePrefab, contentParentWho);
+            message.text = text;
+            audioSource.PlayOneShot(clip);
+            currentTag = "";
+        }
+        else
+        {
+            var message = Instantiate(messagePrefab, contentParent);
+            message.text = text;
+            audioSource.PlayOneShot(clip);
+        }
+    
 
         
         

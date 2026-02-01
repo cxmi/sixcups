@@ -9,6 +9,7 @@ public class ChoiceClicker : MonoBehaviour
 
     void OnMouseDown()
     {
+        if (!inkManager.canClick) return;
         Debug.Log("Clicked");
         rotateUi = GetComponentInParent<RotateUI>();
         inkManager.ChooseByText(choiceText + inkManager.sceneIndex);
