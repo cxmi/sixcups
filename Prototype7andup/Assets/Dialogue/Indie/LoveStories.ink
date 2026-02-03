@@ -186,7 +186,11 @@ hair still smelling of wood-smoke. #what
 
 === fire2 ===
 
-Early on you went to a big party together in a big warehouse that doesn’t exist anymore. There was no cell service and you lost each other in the crowd, but found each other an hour later in the bathroom line. #what
+Early on, #what
+you went to a big party together in a big warehouse that doesn’t exist anymore. #what
+There was no cell service #what
+and you lost each other in the crowd, #what
+but found each other an hour later in the bathroom line. #what
 
 + [wood3]
     -> wood3
@@ -207,9 +211,19 @@ Early on you went to a big party together in a big warehouse that doesn’t exis
 === earth2 ===
 
 {gender == "male":
-    At the souvenir shop he bought two little amber fossils. He said it was to symbolize your relationship (“eternal, not ossified”), but he later confessed that he simply couldn’t bring herself to leave without buying something from the elderly woman who ran the store alone. #what
+    At the souvenir shop he bought two little amber fossils. #what
+    He said it was to symbolize your relationship (“eternal, not ossified”), #what
+    but he later confessed that he simply couldn’t bring himself to leave #what
+    
+    without buying something from the elderly woman who ran the store alone. #what
 - else:
-    At the souvenir shop she bought two little amber fossils. She said it was to symbolize your relationship (“eternal, not ossified”), but she later confessed that she simply couldn’t bring herself to leave without buying something from the elderly woman who ran the store alone. #what
+    At the souvenir shop she bought two little amber fossils. #what
+    
+    She said it was to symbolize your relationship (“eternal, not ossified”), #what
+    
+    but she later confessed that she simply couldn’t bring herself to leave #what
+    
+    without buying something from the elderly woman who ran the store alone. #what
 }
 
 
@@ -231,9 +245,19 @@ Early on you went to a big party together in a big warehouse that doesn’t exis
 === metal2 ===
 
 {gender == "male":
-    When the two of you drove across the country, you stopped at the salt flats. They stretched far into the horizon, remnants of an ancient ocean. He scooped a handful of salt and dared you to lick it. You did, and you tasted it on your tongue for hours. #what
+    When the two of you drove across the country, #what
+    you stopped at the salt flats. #what
+    They stretched far into the horizon, #what
+    remnants of an ancient ocean. #what
+    He scooped a handful of salt and dared you to lick it. #what
+    You did, and you tasted it on your tongue for hours. #what
 - else:
-  When the two of you drove across the country, you stopped at the salt flats. They stretched far into the horizon, remnants of an ancient ocean. She scooped a handful of salt and dared you to lick it. You did, and you tasted it on your tongue for hours. #what
+  When the two of you drove across the country, #what
+  you stopped at the salt flats. #what
+  They stretched far into the horizon, #what
+  remnants of an ancient ocean. #what
+  She scooped a handful of salt and dared you to lick it. #what
+  You did, and you tasted it on your tongue for hours. #what
 }
 
 
@@ -256,9 +280,15 @@ Early on you went to a big party together in a big warehouse that doesn’t exis
 === water2 ===
 
 {gender == "male":
-    Neither of you ever learned how to dive, but that didn’t stop either of you from trying off the creaky springboard at the local pool. You liked how he laughed when he did belly-flops, and by the end of the day his stomach was bright red from his efforts. #what
+    Neither of you ever learned how to dive, #what
+    but that didn’t stop either of you from trying off the creaky springboard at the local pool. #what
+    You liked how he laughed when he did belly-flops, #what
+    and by the end of the day his stomach was bright red from his efforts. #what
 - else:
-  Neither of you ever learned how to dive, but that didn’t stop either of you from trying off the creaky springboard at the local pool. You liked how she laughed when you did belly-flops, and by the end of the day your stomach was bright red from your efforts. #what
+  Neither of you ever learned how to dive, #what
+  but that didn’t stop either of you from trying off the creaky springboard at the local pool. #what
+  You liked how she laughed when you did belly-flops, #what
+  and by the end of the day your stomach was bright red from your efforts. #what
 }
 
 
@@ -375,9 +405,19 @@ On a cool, rainy day, #when
 === wood4 ===
 
 {gender == "male":
-    he told you she still loved you, but not in the way he wanted to love you. That things were hard where they should have been easy. That he had met someone that finally felt easy, and realized he didn’t have to be fighting for something all the time. You didn’t understand what he meant, but it didn’t matter anymore. #why
+    he told you she still loved you, #why
+    but not in the way he wanted to love you. #why
+    That things were hard where they should have been easy. #why
+    That he had met someone that finally felt easy, #why
+    and realized he didn’t have to be fighting for something all the time. #why
+    You didn’t understand what he meant, but it didn’t matter anymore. #why
 - else:
-  she told you she still loved you, but not in the way she wanted to love you. That things were hard where they should have been easy. That she had met someone that finally felt easy, and realized she didn’t have to be fighting for something all the time. You didn’t understand what she meant, but it didn’t matter anymore. #why
+  she told you she still loved you, #why
+  but not in the way she wanted to love you. #why
+  That things were hard where they should have been easy. #why
+  That she had met someone that finally felt easy, #why
+  and realized she didn’t have to be fighting for something all the time. #why
+  You didn’t understand what she meant, but it didn’t matter anymore. #why
 }
 
 
