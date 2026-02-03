@@ -239,6 +239,8 @@ public class LoveStoriesTextManager : MonoBehaviour
             message.text = text;
             audioSource.PlayOneShot(clip);
             currentTag = "";
+            ScrollToBottom(scrollRectWho);
+
         }
         else if (currentTag == "what")
         { 
@@ -251,6 +253,8 @@ public class LoveStoriesTextManager : MonoBehaviour
             message.text = text;
             audioSource.PlayOneShot(clip);
             currentTag = "";
+            ScrollToBottom(scrollRectWhat);
+
         }
         else if (currentTag == "when")
         { 
@@ -263,6 +267,9 @@ public class LoveStoriesTextManager : MonoBehaviour
             message.text = text;
             audioSource.PlayOneShot(clip);
             currentTag = "";
+            ScrollToBottom(scrollRectWhen);
+
+            
         }
         else if (currentTag == "why")
         { 
@@ -275,6 +282,8 @@ public class LoveStoriesTextManager : MonoBehaviour
             message.text = text;
             audioSource.PlayOneShot(clip);
             currentTag = "";
+            ScrollToBottom(scrollRectWhy);
+
         }
         else
         {
@@ -410,5 +419,30 @@ public class LoveStoriesTextManager : MonoBehaviour
         canvasGroup.alpha = 0f;
     }
 
+
+    
+    private Coroutine scrollCoroutine;
+
+    void ScrollToBottom(ScrollRect target)
+    {
+        if (scrollCoroutine != null)
+            StopCoroutine(scrollCoroutine);
+
+        scrollCoroutine = StartCoroutine(ScrollToBottomRoutine(target));
+    }
+
+    IEnumerator ScrollToBottomRoutine(ScrollRect target)
+    {
+        // Wait for layout + TMP + ContentSizeFitter
+        yield return null;
+        yield return new WaitForEndOfFrame();
+
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(
+            target.content as RectTransform
+        );
+
+        target.verticalNormalizedPosition = 0f;
+    }
 
 }

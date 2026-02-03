@@ -48,7 +48,17 @@ After a while, you started noticing them too. #who
 
 
 === fire1 ===
-At parties he spoke loudly and excitedly, and people laughed readily at his jokes, even (perhaps especially) when they were bad. To you, he spoke with an earnestness that was sometimes a little embarrassing. You liked that no one ever felt guarded when they were around him; all soft underbelly. #who
+At parties he spoke loudly and excitedly, #who
+
+and people laughed readily at his jokes, #who
+
+even (perhaps especially) when they were bad. #who
+
+To you, he spoke with an earnestness that was sometimes a little embarrassing. #who  
+You liked that no one ever felt guarded when they were around him; #who
+
+all soft underbelly. #who
+>>> #who
 ~gender = "male"
 
 + [wood2]
@@ -68,7 +78,16 @@ At parties he spoke loudly and excitedly, and people laughed readily at his joke
 
 
 === earth1 ===
-Before she made decisions, she would research them meticulously. For as long as it took — hours, days, years. She wasn’t stubborn, nor was she a perfectionist, but she treated everything with a level of care and respect that made you think that the world would be better off if more people were like her. #who
+Before she made decisions, she would research them meticulously. #who 
+
+For as long as it took — hours, days, years. #who
+
+She wasn’t stubborn, nor was she a perfectionist, #who
+
+but she treated everything with a level of care and respect #who
+
+that made you think that the world would be better off if more people were like her. #who
+>>> #who
 ~gender = "female"
 
 + [wood2]
@@ -88,7 +107,14 @@ Before she made decisions, she would research them meticulously. For as long as 
 
 === metal1 ===
 
-You found her hard to read and a little aloof, and it fascinated you. When you made her laugh for the first time, you were nearly breathless at the thrill. You were addicted to how singular she made you feel, to the pleasure of knowing her in a way no one else did. #who
+You found her hard to read and a little aloof, and it fascinated you. #who 
+When you made her laugh for the first time, #who
+
+you were nearly breathless at the thrill. #who
+You were addicted to how singular she made you feel, #who
+
+to the pleasure of knowing her in a way no one else did. #who
+>>> #who 
 ~gender = "female"
 
 + [wood2]
@@ -110,7 +136,13 @@ You found her hard to read and a little aloof, and it fascinated you. When you m
 
 === water1 ===
 
-To him, everything was “yes and?” — you’d ask him to take the day off work to stay in with you, and by afternoon the two of you would be up to your waist in snow building an igloo together, tears of laughter freezing on your eyelashes. #who
+To him, everything was “yes and?” #who
+You’d ask him to take the day off work to stay in with you, #who
+
+and by afternoon the two of you would be up to your waist in snow building an igloo together, #who
+
+tears of laughter freezing on your eyelashes. #who
+>>> #who
 ~gender = "male"
 
 + [wood2]
@@ -130,7 +162,11 @@ To him, everything was “yes and?” — you’d ask him to take the day off wo
     
 === wood2 ===
 
-At a bonfire by the beach a stranger came by with a ukulele and sang you two a song. It was something about sea urchins — you don’t remember the lyrics anymore but you remember laughing about it afterwards in bed together, hair still smelling of wood-smoke. #what
+At a bonfire by the beach a stranger came by with a ukulele and sang you two a song. #what
+It was something about sea urchins, or crabs #what
+You don’t remember the lyrics anymore, #what
+but you remember laughing about it afterwards in bed together, #what
+hair still smelling of wood-smoke. #what
 
 + [wood3]
     -> wood3

@@ -201,7 +201,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 825198270}
   m_HandleRect: {fileID: 825198269}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1984,14 +1984,14 @@ MonoBehaviour:
   contentParentWho: {fileID: 1057779056}
   scrollRectWhat: {fileID: 2110237644}
   contentParentWhat: {fileID: 1084936921}
-  scrollRectWhen: {fileID: 0}
-  contentParentWhen: {fileID: 0}
-  scrollRectWhy: {fileID: 0}
-  contentParentWhy: {fileID: 0}
+  scrollRectWhen: {fileID: 1320119786}
+  contentParentWhen: {fileID: 782291837}
+  scrollRectWhy: {fileID: 1408604956}
+  contentParentWhy: {fileID: 795366616}
   whoCanvasGroup: {fileID: 57806682}
   whatCanvasGroup: {fileID: 2110237643}
-  whenCanvasGroup: {fileID: 0}
-  whyCanvasGroup: {fileID: 0}
+  whenCanvasGroup: {fileID: 1320119785}
+  whyCanvasGroup: {fileID: 1408604955}
   messagePrefab: {fileID: 5766094321531520825, guid: 47f2ec422e1f542f39fffcb971f84065, type: 3}
   choiceButtonPrefab: {fileID: 1415381099792944994, guid: 8f0a1438b5cd047e1a720e0ee89b4fa0, type: 3}
   currentTag: 
@@ -7497,7 +7497,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1223915738}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.9989395
+  m_Size: 0.9989394
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8287,7 +8287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 63, y: 3.13}
+  m_AnchoredPosition: {x: 259, y: 82}
   m_SizeDelta: {x: 243, y: 65.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1320119785
@@ -8298,7 +8298,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320119783}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -8819,7 +8819,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408604953}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -12018,7 +12018,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110237641}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
