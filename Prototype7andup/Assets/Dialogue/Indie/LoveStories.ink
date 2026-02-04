@@ -187,10 +187,12 @@ hair still smelling of wood-smoke. #what
 === fire2 ===
 
 Early on, #what
-you went to a big party together in a big warehouse that doesn’t exist anymore. #what
+you went to a big party together #what
+in that one warehouse that doesn’t exist anymore. #what
 There was no cell service #what
 and you lost each other in the crowd, #what
-but found each other an hour later in the bathroom line. #what
+but found each other an hour later #what
+by bumping into one another on the dance floor. #what
 
 + [wood3]
     -> wood3
@@ -426,16 +428,30 @@ On a cool, rainy day, #when
 
 === fire4 ===
 
-You had a fight, the likes of which you had never had before. You don’t even remember how it started, just that by the time you came to your senses, you had both said things that could never be taken back. #why
+You had a fight, #why
+the likes of which you had never had before. #why
+You don’t even remember how it started, #why
+just that by the time you came to your senses, #why
+you had both said things that could never be taken back. #why
 
 ->DONE
 
 === earth4 ===
 
 {gender == "male":
-    he held your hand for the last time in the hospital. You heard him whisper something, but you couldn’t make out the words. Some time later — a few seconds, a few hours, you don’t know — a nurse came by and gently led you out of the room. #why
+    he held your hand for the last time in the hospital. #why
+    You heard him whisper something, #why
+    but you couldn’t make out the words. #why
+    Some time later — #why
+    a few seconds, a few hours, you don’t know — #why 
+    a nurse came by and gently led you out of the room. #why
 - else:
-  she held your hand for the last time in the hospital. You heard her whisper something, but you couldn’t make out the words. Some time later — a few seconds, a few hours, you don’t know — a nurse came by and gently led you out of the room. #why
+  she held your hand for the last time in the hospital. #why
+  You heard her whisper something, #why
+  but you couldn’t make out the words. #why
+  Some time later — #why
+  a few seconds, a few hours, you don’t know — #why
+  a nurse came by and gently led you out of the room. #why
 }
 
 
@@ -445,9 +461,25 @@ You had a fight, the likes of which you had never had before. You don’t even r
 === metal4 ===
 
 {gender == "male":
-    you sat him down and told him you couldn’t stay. That you loved the life you built together, but that you needed to listen to that tiny voice inside of you that kept telling you you had to leave. He called you selfish, and he wasn’t wrong, but you weren’t wrong either. #why
+    you sat him down #why
+    and told him you couldn’t stay. #why
+    That you loved the life you built together, #why
+    but that you needed to listen #why
+    to that tiny voice inside of you #why
+    that kept telling you you had to leave. #why
+    He called you selfish, #why
+    and he wasn’t wrong, #why
+    but you weren’t wrong either. #why
 - else:
-  you sat her down and told her you couldn’t stay. That you loved the life you built together, but that you needed to listen to that tiny voice inside of you that kept telling you you had to leave. She called you selfish, and she wasn’t wrong, but you weren’t wrong either. #why
+  you sat her down #why
+  and told her you couldn’t stay. #why
+  That you loved the life you built together, #why
+  but that you needed to listen #why
+  to that tiny voice inside of you #why
+  that kept telling you you had to leave. #why
+  She called you selfish, #why
+  and she wasn’t wrong, #why
+  but you weren’t wrong either. #why
 }
 
 
@@ -457,9 +489,17 @@ You had a fight, the likes of which you had never had before. You don’t even r
 === water4 ===
 
 {gender == "male":
-    he told you he didn’t know who he was anymore, outside of being with you. That he had changed and changed for you — with you — but had lost sight of something that he desperately needed to find again. #why
+    he told you he didn’t know who he was anymore, #why
+    outside of being with you. #why
+    That he had changed and changed for you #why
+    (with you) #why
+    but had lost sight of something that he desperately needed to find again. #why
 - else:
-  she told you she didn’t know who she was anymore, outside of being with you. That she had changed and changed for you — with you — but had lost sight of something that she desperately needed to find again. #why
+  she told you she didn’t know who she was anymore, #why
+  outside of being with you. #why
+  That she had changed and changed for you #why
+  (with you) #why
+  but had lost sight of something that she desperately needed to find again. #why
 }
 
 
