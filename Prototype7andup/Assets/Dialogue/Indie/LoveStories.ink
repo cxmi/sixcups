@@ -167,6 +167,7 @@ It was something about sea urchins, or crabs #what
 You don’t remember the lyrics anymore, #what
 but you remember laughing about it afterwards in bed together, #what
 hair still smelling of wood-smoke. #what
+>>> #what
 
 + [wood3]
     -> wood3
@@ -193,6 +194,7 @@ There was no cell service #what
 and you lost each other in the crowd, #what
 but found each other an hour later #what
 by bumping into one another on the dance floor. #what
+>>> #what
 
 + [wood3]
     -> wood3
@@ -218,6 +220,7 @@ by bumping into one another on the dance floor. #what
     but he later confessed that he simply couldn’t bring himself to leave #what
     
     without buying something from the elderly woman who ran the store alone. #what
+    >>> #what
 - else:
     At the souvenir shop she bought two little amber fossils. #what
     
@@ -226,6 +229,7 @@ by bumping into one another on the dance floor. #what
     but she later confessed that she simply couldn’t bring herself to leave #what
     
     without buying something from the elderly woman who ran the store alone. #what
+    >>> #what
 }
 
 
@@ -253,6 +257,7 @@ by bumping into one another on the dance floor. #what
     remnants of an ancient ocean. #what
     He scooped a handful of salt and dared you to lick it. #what
     You did, and you tasted it on your tongue for hours. #what
+    >>> #what
 - else:
   When the two of you drove across the country, #what
   you stopped at the salt flats. #what
@@ -260,6 +265,7 @@ by bumping into one another on the dance floor. #what
   remnants of an ancient ocean. #what
   She scooped a handful of salt and dared you to lick it. #what
   You did, and you tasted it on your tongue for hours. #what
+  >>> #what
 }
 
 
@@ -286,11 +292,13 @@ by bumping into one another on the dance floor. #what
     but that didn’t stop either of you from trying off the creaky springboard at the local pool. #what
     You liked how he laughed when he did belly-flops, #what
     and by the end of the day his stomach was bright red from his efforts. #what
+    >>> #what
 - else:
   Neither of you ever learned how to dive, #what
   but that didn’t stop either of you from trying off the creaky springboard at the local pool. #what
   You liked how she laughed when you did belly-flops, #what
   and by the end of the day your stomach was bright red from your efforts. #what
+  >>> #what
 }
 
 
@@ -413,6 +421,7 @@ On a cool, rainy day, #when
     That he had met someone that finally felt easy, #why
     and realized he didn’t have to be fighting for something all the time. #why
     You didn’t understand what he meant, but it didn’t matter anymore. #why
+    xxx #why
 - else:
   she told you she still loved you, #why
   but not in the way she wanted to love you. #why
@@ -420,6 +429,7 @@ On a cool, rainy day, #when
   That she had met someone that finally felt easy, #why
   and realized she didn’t have to be fighting for something all the time. #why
   You didn’t understand what she meant, but it didn’t matter anymore. #why
+  xxx #why
 }
 
 
@@ -433,6 +443,7 @@ the likes of which you had never had before. #why
 You don’t even remember how it started, #why
 just that by the time you came to your senses, #why
 you had both said things that could never be taken back. #why
+xxx #why
 
 ->DONE
 
@@ -445,6 +456,7 @@ you had both said things that could never be taken back. #why
     Some time later — #why
     a few seconds, a few hours, you don’t know — #why 
     a nurse came by and gently led you out of the room. #why
+    xxx #why
 - else:
   she held your hand for the last time in the hospital. #why
   You heard her whisper something, #why
@@ -452,6 +464,7 @@ you had both said things that could never be taken back. #why
   Some time later — #why
   a few seconds, a few hours, you don’t know — #why
   a nurse came by and gently led you out of the room. #why
+  xxx #why
 }
 
 
@@ -470,6 +483,7 @@ you had both said things that could never be taken back. #why
     He called you selfish, #why
     and he wasn’t wrong, #why
     but you weren’t wrong either. #why
+    xxx #why
 - else:
   you sat her down #why
   and told her you couldn’t stay. #why
@@ -480,6 +494,7 @@ you had both said things that could never be taken back. #why
   She called you selfish, #why
   and she wasn’t wrong, #why
   but you weren’t wrong either. #why
+  xxx #why
 }
 
 
@@ -494,12 +509,14 @@ you had both said things that could never be taken back. #why
     That he had changed and changed for you #why
     (with you) #why
     but had lost sight of something that he desperately needed to find again. #why
+    xxx #why
 - else:
   she told you she didn’t know who she was anymore, #why
   outside of being with you. #why
   That she had changed and changed for you #why
   (with you) #why
   but had lost sight of something that she desperately needed to find again. #why
+  xxx #why
 }
 
 
