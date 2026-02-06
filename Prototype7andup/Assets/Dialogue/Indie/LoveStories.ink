@@ -16,9 +16,11 @@ VAR gender = "unset"
     -> water1
 
 === wood1 ===
+———WOOD——— #who
+
 She always stopped to inspect little things. #who
 
-Details that slipped you by — #who
+Details that slipped you by: #who
 
 a still-green leaf in the dead of winter, #who
 
@@ -28,7 +30,8 @@ a ladybug with too many spots. #who
 
 After a while, you started noticing them too. #who
 
->>> #who
+[select an element to continue] #who
+——————>>> #who
 ~ gender = "female" 
 
 + [wood2]
@@ -48,6 +51,7 @@ After a while, you started noticing them too. #who
 
 
 === fire1 ===
+———FIRE——— #who
 At parties he spoke loudly and excitedly, #who
 
 and people laughed readily at his jokes, #who
@@ -58,7 +62,8 @@ To you, he spoke with an earnestness that was sometimes a little embarrassing. #
 You liked that no one ever felt guarded when they were around him; #who
 
 all soft underbelly. #who
->>> #who
+[select an element to continue] #who
+——————>>> #who
 ~gender = "male"
 
 + [wood2]
@@ -78,6 +83,7 @@ all soft underbelly. #who
 
 
 === earth1 ===
+———EARTH——— #who
 Before she made decisions, she would research them meticulously. #who 
 
 For as long as it took — hours, days, years. #who
@@ -87,7 +93,8 @@ She wasn’t stubborn, nor was she a perfectionist, #who
 but she treated everything with a level of care and respect #who
 
 that made you think that the world would be better off if more people were like her. #who
->>> #who
+[select an element to continue] #who
+——————>>> #who
 ~gender = "female"
 
 + [wood2]
@@ -106,7 +113,7 @@ that made you think that the world would be better off if more people were like 
     -> water2
 
 === metal1 ===
-
+———METAL——— #who
 You found her hard to read and a little aloof, and it fascinated you. #who 
 When you made her laugh for the first time, #who
 
@@ -114,7 +121,8 @@ you were nearly breathless at the thrill. #who
 You were addicted to how singular she made you feel, #who
 
 to the pleasure of knowing her in a way no one else did. #who
->>> #who 
+[select an element to continue] #who
+——————>>> #who 
 ~gender = "female"
 
 + [wood2]
@@ -135,14 +143,16 @@ to the pleasure of knowing her in a way no one else did. #who
 
 
 === water1 ===
-
+———WATER——— #who
 To him, everything was “yes and?” #who
 You’d ask him to take the day off work to stay in with you, #who
 
-and by afternoon the two of you would be up to your waist in snow building an igloo together, #who
+and by afternoon #who
+the two of you would be up to your waist in snow #who
+building an igloo together, #who
 
 tears of laughter freezing on your eyelashes. #who
->>> #who
+——————>>> #who
 ~gender = "male"
 
 + [wood2]
@@ -161,13 +171,13 @@ tears of laughter freezing on your eyelashes. #who
     -> water2
     
 === wood2 ===
-
+———WOOD——— #what
 At a bonfire by the beach a stranger came by with a ukulele and sang you two a song. #what
 It was something about sea urchins, or crabs #what
 You don’t remember the lyrics anymore, #what
 but you remember laughing about it afterwards in bed together, #what
 hair still smelling of wood-smoke. #what
->>> #what
+——————>>> #what
 
 + [wood3]
     -> wood3
@@ -186,15 +196,15 @@ hair still smelling of wood-smoke. #what
     
 
 === fire2 ===
-
+———FIRE——— #what
 Early on, #what
 you went to a big party together #what
 in that one warehouse that doesn’t exist anymore. #what
 There was no cell service #what
 and you lost each other in the crowd, #what
 but found each other an hour later #what
-by bumping into one another on the dance floor. #what
->>> #what
+crashing into one another on the dance floor. #what
+——————>>> #what
 
 + [wood3]
     -> wood3
@@ -213,23 +223,24 @@ by bumping into one another on the dance floor. #what
     
 
 === earth2 ===
-
 {gender == "male":
+    ———EARTH——— #what
     At the souvenir shop he bought two little amber fossils. #what
     He said it was to symbolize your relationship (“eternal, not ossified”), #what
-    but he later confessed that he simply couldn’t bring himself to leave #what
+    but he later confessed that he simply couldn’t bring himself to leave the store #what
     
-    without buying something from the elderly woman who ran the store alone. #what
-    >>> #what
+    without buying something from the elderly woman who ran it alone. #what
+    ——————>>> #what
 - else:
+    ———EARTH——— #what
     At the souvenir shop she bought two little amber fossils. #what
     
     She said it was to symbolize your relationship (“eternal, not ossified”), #what
     
-    but she later confessed that she simply couldn’t bring herself to leave #what
+    but she later confessed that she simply couldn’t bring herself to leave the store #what
     
-    without buying something from the elderly woman who ran the store alone. #what
-    >>> #what
+    without buying something from the elderly woman who ran it alone. #what
+    ——————>>> #what
 }
 
 
@@ -251,21 +262,23 @@ by bumping into one another on the dance floor. #what
 === metal2 ===
 
 {gender == "male":
+    ———METAL——— #what
     When the two of you drove across the country, #what
     you stopped at the salt flats. #what
     They stretched far into the horizon, #what
     remnants of an ancient ocean. #what
     He scooped a handful of salt and dared you to lick it. #what
     You did, and you tasted it on your tongue for hours. #what
-    >>> #what
+    ——————>>> #what
 - else:
+    ———METAL——— #what
   When the two of you drove across the country, #what
   you stopped at the salt flats. #what
   They stretched far into the horizon, #what
   remnants of an ancient ocean. #what
   She scooped a handful of salt and dared you to lick it. #what
   You did, and you tasted it on your tongue for hours. #what
-  >>> #what
+  ——————>>> #what
 }
 
 
@@ -288,17 +301,19 @@ by bumping into one another on the dance floor. #what
 === water2 ===
 
 {gender == "male":
+———WATER——— #what
     Neither of you ever learned how to dive, #what
     but that didn’t stop either of you from trying off the creaky springboard at the local pool. #what
     You liked how he laughed when he did belly-flops, #what
     and by the end of the day his stomach was bright red from his efforts. #what
-    >>> #what
+    ——————>>> #what
 - else:
+———WATER——— #what
   Neither of you ever learned how to dive, #what
   but that didn’t stop either of you from trying off the creaky springboard at the local pool. #what
   You liked how she laughed when you did belly-flops, #what
   and by the end of the day your stomach was bright red from your efforts. #what
-  >>> #what
+  ——————>>> #what
 }
 
 
@@ -319,8 +334,10 @@ by bumping into one another on the dance floor. #what
     
     
 === wood3 ===
+———WOOD——— #when
+On a humid summer evening— #when
+——————>>> #when
 
-On a humid summer evening, #when
 
 + [wood4]
     -> wood4
@@ -338,8 +355,9 @@ On a humid summer evening, #when
     -> water4
     
 === fire3 ===
-
-On a sweltering August day, #when
+———FIRE——— #when
+On a sweltering August day— #when
+——————>>> #when
 
 + [wood4]
     -> wood4
@@ -357,8 +375,9 @@ On a sweltering August day, #when
     -> water4
     
 === earth3 ===
-
-On a windy, cloudless day, #when
+———EARTH——— #when
+On a windy, cloudless day— #when
+——————>>> #when
 
 + [wood4]
     -> wood4
@@ -376,8 +395,10 @@ On a windy, cloudless day, #when
     -> water4
 
 === metal3 ===
+———METAL——— #when
+On a still, silent morning— #when
+——————>>> #when
 
-On a still, silent morning, #when
 + [wood4]
     -> wood4
 
@@ -394,8 +415,10 @@ On a still, silent morning, #when
     -> water4
     
 === water3 ===
+———WATER——— #when
+On a cool, rainy day— #when
+——————>>> #when
 
-On a cool, rainy day, #when
 
 + [wood4]
     -> wood4
@@ -415,21 +438,23 @@ On a cool, rainy day, #when
 === wood4 ===
 
 {gender == "male":
+———WOOD——— #why
     he told you she still loved you, #why
     but not in the way he wanted to love you. #why
     That things were hard where they should have been easy. #why
     That he had met someone that finally felt easy, #why
     and realized he didn’t have to be fighting for something all the time. #why
     You didn’t understand what he meant, but it didn’t matter anymore. #why
-    xxx #why
+    ———FIN——— #why
 - else:
+———WOOD——— #why
   she told you she still loved you, #why
   but not in the way she wanted to love you. #why
   That things were hard where they should have been easy. #why
   That she had met someone that finally felt easy, #why
   and realized she didn’t have to be fighting for something all the time. #why
   You didn’t understand what she meant, but it didn’t matter anymore. #why
-  xxx #why
+  ———FIN——— #why
 }
 
 
@@ -437,34 +462,36 @@ On a cool, rainy day, #when
 ->DONE
 
 === fire4 ===
-
+———FIRE——— #why
 You had a fight, #why
 the likes of which you had never had before. #why
 You don’t even remember how it started, #why
 just that by the time you came to your senses, #why
 you had both said things that could never be taken back. #why
-xxx #why
+———FIN———  #why
 
 ->DONE
 
 === earth4 ===
 
 {gender == "male":
+———EARTH——— #why
     he held your hand for the last time in the hospital. #why
     You heard him whisper something, #why
     but you couldn’t make out the words. #why
     Some time later — #why
     a few seconds, a few hours, you don’t know — #why 
     a nurse came by and gently led you out of the room. #why
-    xxx #why
+    ———FIN——— #why
 - else:
+———EARTH——— #why
   she held your hand for the last time in the hospital. #why
   You heard her whisper something, #why
   but you couldn’t make out the words. #why
   Some time later — #why
   a few seconds, a few hours, you don’t know — #why
   a nurse came by and gently led you out of the room. #why
-  xxx #why
+  ———FIN———  #why
 }
 
 
@@ -474,6 +501,7 @@ xxx #why
 === metal4 ===
 
 {gender == "male":
+———METAL——— #why
     you sat him down #why
     and told him you couldn’t stay. #why
     That you loved the life you built together, #why
@@ -483,8 +511,9 @@ xxx #why
     He called you selfish, #why
     and he wasn’t wrong, #why
     but you weren’t wrong either. #why
-    xxx #why
+    ———FIN——— #why
 - else:
+———METAL——— #why
   you sat her down #why
   and told her you couldn’t stay. #why
   That you loved the life you built together, #why
@@ -494,7 +523,7 @@ xxx #why
   She called you selfish, #why
   and she wasn’t wrong, #why
   but you weren’t wrong either. #why
-  xxx #why
+———FIN——— #why
 }
 
 
@@ -504,19 +533,21 @@ xxx #why
 === water4 ===
 
 {gender == "male":
+———WATER——— #why
     he told you he didn’t know who he was anymore, #why
     outside of being with you. #why
     That he had changed and changed for you #why
     (with you) #why
     but had lost sight of something that he desperately needed to find again. #why
-    xxx #why
+    ———FIN——— #why
 - else:
+———WATER——— #why
   she told you she didn’t know who she was anymore, #why
   outside of being with you. #why
   That she had changed and changed for you #why
   (with you) #why
   but had lost sight of something that she desperately needed to find again. #why
-  xxx #why
+  ———FIN——— #why
 }
 
 

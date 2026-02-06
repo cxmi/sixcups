@@ -11,6 +11,8 @@ public class LoveStoriesTextManager : MonoBehaviour
     [Header("Ink Story")]
     [SerializeField] private TextAsset inkJSONAsset;
     private Story story;
+    private bool playSound = false;
+
 
     [Header("UI References")]
     [SerializeField] private ScrollRect scrollRect;                // Scroll View component
@@ -38,6 +40,8 @@ public class LoveStoriesTextManager : MonoBehaviour
     public GameObject damageImage;
     public AudioSource audioSource;
     public AudioClip clip;
+
+    public GameObject restartButton;
     
     public float flashInterval = 0.2f;
     
@@ -64,6 +68,8 @@ public class LoveStoriesTextManager : MonoBehaviour
     private void Start()
     {
        // scrollRect.verticalNormalizedPosition = 0f;
+       restartButton.SetActive(false);
+
        audioSource = GetComponent<AudioSource>();
 
         if (inkJSONAsset == null)
@@ -76,6 +82,7 @@ public class LoveStoriesTextManager : MonoBehaviour
         ContinueStory();
         
     }
+
 
     
     public void ContinueStory()
@@ -100,6 +107,9 @@ public class LoveStoriesTextManager : MonoBehaviour
 
         if (displayRoutine == null)
             displayRoutine = StartCoroutine(DisplayLines());
+        // Allow sound AFTER the story has started
+        playSound = true;
+
     }
 
     
@@ -142,6 +152,12 @@ public class LoveStoriesTextManager : MonoBehaviour
 
         canClick = true;
         displayRoutine = null;
+        
+        //  CHECK FOR STORY END HERE
+        if (!story.canContinue && story.currentChoices.Count == 0)
+        {
+            OnStoryComplete();
+        }
     }
 
 
@@ -237,7 +253,10 @@ public class LoveStoriesTextManager : MonoBehaviour
             }
             var message = Instantiate(messagePrefab, contentParentWho);
             message.text = text;
-            audioSource.PlayOneShot(clip);
+            if (playSound)
+            {
+                audioSource.PlayOneShot(clip);
+            }
             currentTag = "";
             ScrollToBottom(scrollRectWho);
 
@@ -251,7 +270,10 @@ public class LoveStoriesTextManager : MonoBehaviour
             }
             var message = Instantiate(messagePrefab, contentParentWhat);
             message.text = text;
-            audioSource.PlayOneShot(clip);
+            if (playSound)
+            {
+                audioSource.PlayOneShot(clip);
+            }
             currentTag = "";
             ScrollToBottom(scrollRectWhat);
 
@@ -265,7 +287,10 @@ public class LoveStoriesTextManager : MonoBehaviour
             }
             var message = Instantiate(messagePrefab, contentParentWhen);
             message.text = text;
-            audioSource.PlayOneShot(clip);
+            if (playSound)
+            {
+                audioSource.PlayOneShot(clip);
+            }
             currentTag = "";
             ScrollToBottom(scrollRectWhen);
 
@@ -280,7 +305,10 @@ public class LoveStoriesTextManager : MonoBehaviour
             }
             var message = Instantiate(messagePrefab, contentParentWhy);
             message.text = text;
-            audioSource.PlayOneShot(clip);
+            if (playSound)
+            {
+                audioSource.PlayOneShot(clip);
+            }
             currentTag = "";
             ScrollToBottom(scrollRectWhy);
 
@@ -289,7 +317,11 @@ public class LoveStoriesTextManager : MonoBehaviour
         {
             var message = Instantiate(messagePrefab, contentParent);
             message.text = text;
-            audioSource.PlayOneShot(clip);
+            if (playSound)
+            {
+                audioSource.PlayOneShot(clip);
+            }
+            
         }
     
 
@@ -445,4 +477,10 @@ public class LoveStoriesTextManager : MonoBehaviour
         target.verticalNormalizedPosition = 0f;
     }
 
+    
+    void OnStoryComplete()
+    {
+        Debug.Log("Story is DONE!");
+        restartButton.SetActive(true);
+    }
 }
